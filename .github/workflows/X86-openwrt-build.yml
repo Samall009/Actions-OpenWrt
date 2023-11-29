@@ -1,4 +1,4 @@
-name: OpenWrt X86 Build
+name: OpenWrt Golble X86 Build
 
 on:
   repository_dispatch:
