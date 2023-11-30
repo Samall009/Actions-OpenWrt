@@ -7,17 +7,6 @@
 
 name: Openwrt_Build_x86_64
 
-on: 
-  release:
-    types: [published]
-  # push:
-  #  branches: 
-  #    - master
-  # schedule:
-  #  - cron: 0 0 */11 * *
-  watch:
-    types: [started]
-
 jobs:
   build_openwrt:
     runs-on: ubuntu-18.04
