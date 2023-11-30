@@ -7,6 +7,15 @@
 
 name: Openwrt_Build_x86_64
 
+on:
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+
 jobs:
   build_openwrt:
     runs-on: ubuntu-18.04
